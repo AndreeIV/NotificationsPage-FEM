@@ -1,0 +1,100 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.card {
+    display: flex;
+    align-items: flex-start;
+
+    // background-color: v.$Very-light-grayish-blue;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    gap: 1.5rem;
+
+    border-radius: 6px;
+
+    .img {
+        width: 4rem;
+    }
+
+    .info {
+
+        p {
+            // width: 26.5rem;
+            font-size: 1.5rem;
+            margin: 0;
+            color: v.$Grayish-blue;
+            // overflow-wrap: break-word;
+            
+            .name {
+                color: v.$Very-dark-blue;
+                font-weight: v.$black;
+                cursor: pointer;
+
+                &:hover {
+                    color: v.$Blue;
+                }
+            }
+
+            .event {
+                color: v.$Dark-grayish-blue;
+                font-weight: v.$black;
+                cursor: pointer;
+
+                &:hover {
+                    color: v.$Blue;
+                }
+            }
+            .group {
+                color: v.$Blue;
+                font-weight: v.$black;
+                cursor: pointer;
+            }
+        }
+        
+        .note {
+            border: 1px solid v.$Light-grayish-blue-2;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: v.$Light-grayish-blue-2;
+            }
+        }
+        .time {
+            color: v.$Grayish-blue;
+            font-size: 1.35rem;
+            padding-top: .5rem;
+        }
+        .article {
+            color: v.$Dark-grayish-blue;
+            font-weight: v.$normal;
+            
+        }
+    }
+}
+.card {
+
+
+    .chess {
+        width: 3.5rem;
+    }
+}
+
+.unread {
+    background-color: v.$Light-grayish-blue-1;
+
+
+    p:first-of-type::after{
+
+        content: '';
+        width: .7rem;
+        height: .7rem;
+        background-color: v.$Red;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: .5rem;
+    }
+}

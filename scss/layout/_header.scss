@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$Light-grayish-blue-2;
+}
+.container {
+    width: 60rem;
+    margin: 0 1.5rem;
+    background-color: v.$Very-light-grayish-blue;
+    padding: 1.5rem 3rem;
+    border-radius: 7px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        font-size: 2rem;
+
+
+        span {
+            padding: .1rem 1rem;
+            border-radius: .6rem;
+
+            background-color: v.$Blue;
+            color: v.$White;
+            margin-left: 1rem;
+        }
+    }
+
+    .mark-all {
+        font-size: 1.4rem;
+        color: v.$Dark-grayish-blue;
+        cursor: pointer;
+        &:hover {
+            color: v.$Blue;
+        }
+    }
+}
+

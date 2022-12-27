@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["markAll","document","getElementsByClassName","console","log"],"mappings":"AAAA,MAAMA,QAAUC,SAASC,uBAAuB,YAChDC,QAAQC,IAAIJ","file":"index.js","sourcesContent":["const markAll = document.getElementsByClassName('mark-all');\r\nconsole.log(markAll)"]}
